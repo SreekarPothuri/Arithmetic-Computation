@@ -25,4 +25,9 @@ store_results 4 $pb4
 
 echo "Key : ${!Calculations[@]} ---- Value : ${Calculations[@]}"
 
+for(( i=0; i<=4; i++))
+do
+	ArrayofResults[$i]=${Calculations[$i]}
+done
 
+echo ${ArrayofResults[@]}
