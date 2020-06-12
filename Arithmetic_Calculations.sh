@@ -34,7 +34,7 @@ for (( i=0; i<=4; i++ ))
 do
         for (( j=$(($i + 1)); j<=4; j++ ))
         do
-                if [[ ${ArrayofResults[$j]} -gt ${ArrayofResults[$i]} ]]
+                if [[ ${ArrayofResults[$j]} -lt ${ArrayofResults[$i]} ]]
                 then
                         temp=${ArrayofResults[i]}
                         ArrayofResults[i]=${ArrayofResults[j]}
