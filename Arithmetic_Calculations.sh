@@ -9,3 +9,5 @@ read -p "Enter the value of c : " c
 pb1=$(( $a + ($b * $c) ))
 pb2=$(( ($a * $b) + $c ))
 pb3=$(( $c + ($a / $b) ))
+pb4=$(( ($a % $b) + $c ))
+
