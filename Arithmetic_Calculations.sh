@@ -30,4 +30,20 @@ do
 	ArrayofResults[$i]=${Calculations[$i]}
 done
 
+for (( i=0; i<=4; i++ ))
+do
+        for (( j=$(($i + 1)); j<=4; j++ ))
+        do
+                if [[ ${ArrayofResults[$j]} -gt ${ArrayofResults[$i]} ]]
+                then
+                        temp=${ArrayofResults[i]}
+                        ArrayofResults[i]=${ArrayofResults[j]}
+                        ArrayofResults[j]=$temp
+                fi
+        done
+done
+
 echo ${ArrayofResults[@]}
+
+
+
