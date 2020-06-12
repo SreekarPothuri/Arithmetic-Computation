@@ -7,3 +7,4 @@ read -p "Enter the value of b : " b
 read -p "Enter the value of c : " c
 
 pb1=$(( $a + ($b * $c) ))
+pb2=$(( ($a * $b) + $c ))
